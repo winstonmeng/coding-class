@@ -83,7 +83,7 @@ print("Part A secret message:", secret_message)
 # Hint:
 # The secret words are every other word starting from "Meet".
 
-secret_message_bonus = words[1::2]  # TODO: fill in start, stop, step
+secret_message_bonus = words[13::2]  # TODO: fill in start, stop, step
 print("Part B bonus message:", secret_message_bonus)
 
 
