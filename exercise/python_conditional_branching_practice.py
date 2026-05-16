@@ -138,7 +138,7 @@ print("--------------------------------")
 
 if is_vip is True:
     print("Welcome, VIP!")
-elif (age >= 11) and (has_ticket == True):
+elif (age >= 7) and (has_ticket == True):
     print("You can enter with your ticket.")
 else:
     print("Sorry, you cannot enter.")
