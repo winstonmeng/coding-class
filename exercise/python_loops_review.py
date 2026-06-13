@@ -94,7 +94,7 @@ print("============================")
 
 even_numbers = []
 
-for number in range(TODO, TODO, TODO):
+for number in range(2, 11, 2):
     even_numbers.append(number)
 
 check("3.1 Even numbers", even_numbers, [2, 4, 6, 8, 10])
@@ -102,7 +102,7 @@ check("3.1 Even numbers", even_numbers, [2, 4, 6, 8, 10])
 
 jump_by_three = []
 
-for number in range(TODO, TODO, TODO):
+for number in range(3, 13, 3):
     jump_by_three.append(number)
 
 check("3.2 Jump by three", jump_by_three, [3, 6, 9, 12])
@@ -110,7 +110,7 @@ check("3.2 Jump by three", jump_by_three, [3, 6, 9, 12])
 
 reverse_even = []
 
-for number in range(TODO, TODO, TODO):
+for number in range(10, 1, -2):
     reverse_even.append(number)
 
 check("3.3 Reverse even numbers", reverse_even, [10, 8, 6, 4, 2])
@@ -128,7 +128,7 @@ scores = [10, 20, 15, 5]
 total = 0
 
 for score in scores:
-    total = TODO
+    total = score + total
 
 check("4.1 Total score", total, 50)
 
@@ -137,7 +137,7 @@ numbers = [4, 7, 2, 9]
 product = 1
 
 for number in numbers:
-    product = TODO
+    product = product * number
 
 check("4.2 Product", product, 504)
 
@@ -146,7 +146,7 @@ words = ["I", "love", "Python"]
 sentence = ""
 
 for word in words:
-    sentence = TODO
+    sentence = sentence + word + " "
 
 check("4.3 Build sentence", sentence, "I love Python ")
 
@@ -163,8 +163,8 @@ numbers = [3, 12, 7, 20, 5, 18]
 big_count = 0
 
 for number in numbers:
-    if TODO:
-        big_count = TODO
+    if number > 10:
+        big_count = big_count + 1
 
 check("5.1 Count numbers greater than 10", big_count, 3)
 
@@ -173,8 +173,8 @@ words = ["apple", "banana", "pear", "blueberry"]
 long_words = 0
 
 for word in words:
-    if TODO:
-        long_words = TODO
+    if len(word) > 5 :
+        long_words = long_words + 1
 
 check("5.2 Count long words", long_words, 2)
 
@@ -183,8 +183,8 @@ items = ["coin", "rock", "ruby", "stick", "coin", "diamond", "leaf"]
 treasure_count = 0
 
 for item in items:
-    if TODO:
-        treasure_count = TODO
+    if item == "coin" or item == "ruby" or item == "diamond":
+        treasure_count = treasure_count + 1
 
 check("5.3 Count treasures", treasure_count, 4)
 

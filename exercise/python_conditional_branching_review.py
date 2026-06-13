@@ -423,11 +423,11 @@ else:
 
 check("8.1 Robot guard (not, and, or together)", guard_result, "enter the lab")
 
-
 print()
 print("Reflection Questions")
 print("====================")
 print("1. Which problem had the trickiest boundaries (>, >=, or ranges)?")
+#6.3. Because the range has to be specified but it only looks at the if first, so technically if the if is correct, it will not even look at the elif and else
 print("2. Why does Python check if / elif conditions from top to bottom?")
 print("3. How is (A and (B or C)) different from ((A and B) or C)? Give an example.")
 print("4. Why might not (A or B) be easier to read than (not A and not B)?")
