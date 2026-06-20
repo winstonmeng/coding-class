@@ -200,9 +200,9 @@ print("======================")
 countdown = []
 count = 5
 
-while TODO:
+while count != 0:
     countdown.append(count)
-    count = TODO
+    count = count - 1
 
 check("6.1 Countdown", countdown, [5, 4, 3, 2, 1])
 
@@ -210,8 +210,8 @@ check("6.1 Countdown", countdown, [5, 4, 3, 2, 1])
 energy_list = []
 energy = 0
 
-while TODO:
-    energy = TODO
+while energy != 100:
+    energy = energy + 20
     energy_list.append(energy)
 
 check("6.2 Energy charger", energy_list, [20, 40, 60, 80, 100])
@@ -220,9 +220,9 @@ check("6.2 Energy charger", energy_list, [20, 40, 60, 80, 100])
 doubles = []
 number = 1
 
-while TODO:
+while number != 32 :
     doubles.append(number)
-    number = TODO
+    number = number * 2
 
 check("6.3 Double until 16", doubles, [1, 2, 4, 8, 16])
 
@@ -240,8 +240,8 @@ correct_password = "python123"
 found_password = False
 
 for password in passwords:
-    if TODO:
-        found_password = TODO
+    if password == "python123":
+        found_password = True
 
 check("7.1 Found password", found_password, True)
 
@@ -264,14 +264,14 @@ points = 0
 # - other actions give 0 points
 
 for action in actions:
-    if TODO:
-        points = TODO
-    elif TODO:
-        points = TODO
-    elif TODO:
-        points = TODO
+    if action == "coin":
+        points = points + 10
+    elif action == "enemy":
+        points = points + 50
+    elif action == "finish":
+        points = points + 100
 
-check("8.1 Game points", points, 180)
+check("8.1 Game points", points, 230)
 
 
 print()
