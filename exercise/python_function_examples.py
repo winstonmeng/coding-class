@@ -13,3 +13,23 @@ def convert_days_to_seconds(days):
     return yoctosecond
 
 print(convert_days_to_seconds(1))
+
+message = "happy"
+print(message.replace("a","o").upper())
+countdown = [1,2,3]
+print(countdown.reverse())
+print(countdown)
+
+list_A = [1,5,2,4,7]
+print(list_A.reverse())
+print(list_A)
+print(list_A.sort())
+print(list_A)
+list_A.reverse()
+print(list_A)
+list_A.append(9)
+print(list_A)
+list_A.insert(2,10)
+print(list_A)
+list_A.clear()
+print(list_A)

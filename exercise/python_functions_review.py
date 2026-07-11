@@ -54,16 +54,19 @@ def add_excited_ending(sentence):
     return sentence + "!"
 
 
-# Call make_uppercase("python").
-answer_1_1 = TODO_TEXT
+word_to_test = "python"
+# Call make_uppercase with word_to_test and store what it returns.
+answer_1_1 = make_uppercase(word_to_test)
 check("1.1 Call make_uppercase()", answer_1_1, "PYTHON")
 
-# Call find_biggest([4, 19, 7, 12]).
-answer_1_2 = TODO_NUMBER
+scores = [4, 19, 7, 12]
+# Call find_biggest with the list above and store the result.
+answer_1_2 = find_biggest (scores)
 check("1.2 Call find_biggest()", answer_1_2, 19)
 
-# Store the return value from add_excited_ending("Functions are useful").
-answer_1_3 = TODO_TEXT
+sentence = "Functions are useful"
+# Call add_excited_ending with sentence and store what it returns.
+answer_1_3 = add_excited_ending(sentence)
 check("1.3 Store a return value", answer_1_3, "Functions are useful!")
 
 
@@ -77,9 +80,8 @@ print("==========================================")
 
 
 def make_badge(name, level):
-    # Return text like: Sara - Level 5
-    return TODO_TEXT
-
+    # Combine name and level into one badge string using both parameters.
+    return name + " - " + "Level " + str(level)
 
 check("2.1 Badge for Sara", make_badge("Sara", 5), "Sara - Level 5")
 check("2.2 Badge for Winston", make_badge("Winston", 12), "Winston - Level 12")
@@ -87,7 +89,7 @@ check("2.2 Badge for Winston", make_badge("Winston", 12), "Winston - Level 12")
 
 def rectangle_area(width, height):
     # Return the area of a rectangle.
-    return TODO_NUMBER
+    return width * height
 
 
 check("2.3 Rectangle 4 by 6", rectangle_area(4, 6), 24)
@@ -117,7 +119,7 @@ def convert_days_to_seconds(days):
     minutes = hours * 60
     seconds = minutes * 60
 
-    # Return the variable seconds.
+    # Return the total seconds you calculated above.
     return TODO_NUMBER
 
 
@@ -128,7 +130,7 @@ check("3.2 Seconds in 7 days", convert_days_to_seconds(7), 604800)
 def convert_days_to_milliseconds(days):
     seconds = convert_days_to_seconds(days)
 
-    # Use the return value stored in seconds.
+    # Convert seconds to milliseconds (1000 milliseconds = 1 second).
     return TODO_NUMBER
 
 
@@ -137,7 +139,7 @@ check("3.4 Milliseconds in 5 days", convert_days_to_milliseconds(5), 432000000)
 
 
 def total_seconds(days, hours, minutes):
-    # Return the total number of seconds.
+    # Add up days, hours, and minutes, then return the total in seconds.
     return TODO_NUMBER
 
 
@@ -244,7 +246,8 @@ print("===========================================================")
 
 
 def clean_message(message):
-    # Replace "bug" with "feature", then return the message in uppercase.
+    # Clean up the message, then return it in uppercase.
+    # Hint: one word in the message should be swapped for a nicer one.
     return TODO_TEXT
 
 
@@ -253,8 +256,7 @@ check("6.2 Clean two bug messages", clean_message("bug found another bug"), "FEA
 
 
 def make_reversed_copy(items):
-    # Make a copy, reverse the copy, and return it.
-    # Do not change the original list.
+    # Reverse the copy below and return it without changing the original list.
     result = items.copy()
     TODO_LIST
     return result
@@ -277,14 +279,14 @@ print("===========================================")
 
 
 def mission_report(name, days, coins, gems):
-    # Return a sentence like:
-    # SARA explored for 172800 seconds and earned 90 points!
+    # Return one sentence in this pattern:
+    # NAME explored for TOTAL_SECONDS seconds and earned TOTAL_POINTS points!
     #
     # Rules:
     # - name should be uppercase
-    # - use convert_days_to_seconds(days)
-    # - coins are worth 10 points
-    # - gems are worth 50 points
+    # - use convert_days_to_seconds(days) for the time part
+    # - coins are worth 10 points each
+    # - gems are worth 50 points each
     return TODO_TEXT
 
 

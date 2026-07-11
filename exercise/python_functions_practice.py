@@ -69,7 +69,7 @@ check("2.2 Replace part of a string", answer_2_2, "python makes me :D")
 countdown = [1, 2, 3]
 
 # Replace the next line with a method call that changes countdown into [3, 2, 1].
-countdown.reverse()
+countdown=list(reversed(countdown))
 check("2.3 Reverse a list with reverse()", countdown, [3, 2, 1])
 
 
@@ -84,7 +84,7 @@ print("========================================================")
 
 def say_python():
     # Return the exact text: I am learning functions
-    return TODO_TEXT
+    return "I am learning functions"
 
 
 answer_3_1 = say_python()
@@ -97,7 +97,7 @@ def seconds_per_day():
     seconds = minutes * 60
 
     # Return the variable seconds.
-    return TODO_NUMBER
+    return seconds
 
 
 answer_3_2 = seconds_per_day()
@@ -115,7 +115,7 @@ print("=====================")
 
 def greet(name):
     # Use the parameter name to return: Hello Sara
-    return TODO_TEXT
+    return "Hello " + name
 
 
 answer_4_1 = greet("Sara")
@@ -124,7 +124,7 @@ check("4.1 Greet Sara", answer_4_1, "Hello Sara")
 
 def double_number(number):
     # Return number doubled.
-    return TODO_NUMBER
+    return number * 2
 
 
 answer_4_2 = double_number(7)
@@ -137,7 +137,7 @@ def days_to_seconds(days):
     seconds = minutes * 60
 
     # Return the variable seconds.
-    return TODO_NUMBER
+    return seconds
 
 
 answer_4_3 = days_to_seconds(7)
@@ -155,13 +155,13 @@ print("=======================================")
 seconds_for_three_days = days_to_seconds(3)
 
 # Use seconds_for_three_days to calculate milliseconds.
-milliseconds = TODO_NUMBER
+milliseconds = seconds_for_three_days * 1000
 check("5.1 Convert 3 days to milliseconds", milliseconds, 259200000)
 
 
 def add_points(coins, gems):
     # Coins are worth 10 points. Gems are worth 50 points.
-    return TODO_NUMBER
+    return coins * 10 + gems * 50
 
 
 total_points = add_points(4, 2)
